@@ -102,8 +102,9 @@ const SlideshowQuiz = () => {
   };
 
   // Toggle slideshow the way you want
-  const cardClassName = `bg-${theme === "dark" ? "black" : "white"} text-${
-    theme === "dark" ? "white" : "black"
+  const cardClassName = `${
+    theme === "dark" ? "bg-black text-white" : "bg-white text-black"
+  } 
   }`;
 
   return (

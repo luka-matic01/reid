@@ -3,7 +3,9 @@ import axios from "axios";
 // Fetches all the questions from the database
 export const fetchQuestions = async () => {
   try {
-    const response = await axios.get("http://localhost:3000/questions");
+    const response = await axios.get(
+      `${import.meta.env.VITE_BASE_URL}/questions`
+    );
     const questions = response.data;
     return questions;
   } catch (error) {
@@ -21,7 +23,7 @@ export const fetchSelectedQuestions = async (selectedQuestionsIds) => {
 
   if (getQuestionsQueryParams) {
     const response = await axios.get(
-      `http://localhost:3000/questions?${getQuestionsQueryParams}`
+      `${import.meta.env.VITE_BASE_URL}/questions?${getQuestionsQueryParams}`
     );
     const selectedQuestions = response.data;
     return selectedQuestions;
@@ -36,7 +38,7 @@ export const createQuestions = async (questionsData) => {
     const createdQuestions = [];
     for (const questionData of questionsData) {
       const response = await axios.post(
-        "http://localhost:3000/questions",
+        `${import.meta.env.VITE_BASE_URL}/questions`,
         questionData
       );
       const createdQuestion = response.data;
@@ -55,7 +57,10 @@ export const editQuestions = async (quiz) => {
   const questions = quiz.questions;
   try {
     const updatePromises = questions.map((question) =>
-      axios.put(`http://localhost:3000/questions/${question.id}`, question)
+      axios.put(
+        `${import.meta.env.VITE_BASE_URL}/questions/${question.id}`,
+        question
+      )
     );
 
     const updateResponses = await Promise.all(updatePromises);

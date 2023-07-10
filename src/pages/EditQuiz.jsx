@@ -90,7 +90,7 @@ const EditQuiz = () => {
       ];
       const updatedData = { ...data, questions: updatedQuestions };
       const updateQuizResponse = await axios.put(
-        `http://localhost:3000/quizzes/${id}`,
+        `${import.meta.env.VITE_BASE_URL}/quizzes/${id}`,
         updatedData,
         {
           headers: {

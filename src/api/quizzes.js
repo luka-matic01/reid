@@ -2,7 +2,9 @@ import axios from "axios";
 
 export const fetchQuiz = async (id, quizType, reset, prepend) => {
   try {
-    const response = await axios.get(`http://localhost:3000/quizzes/${id}`);
+    const response = await axios.get(
+      `${import.meta.env.VITE_BASE_URL}/quizzes/${id}`
+    );
     const quiz = response.data;
     if (quizType === "edit") {
       reset();

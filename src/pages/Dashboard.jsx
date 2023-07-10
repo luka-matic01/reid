@@ -15,7 +15,9 @@ const Dashboard = () => {
 
   const fetchQuizzes = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/quizzes");
+      const response = await axios.get(
+        `${import.meta.env.VITE_BASE_URL}/quizzes`
+      );
       const data = response.data;
       setQuizzes(data);
       setIsLoading(false);
@@ -34,7 +36,7 @@ const Dashboard = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:3000/quizzes/${quizId}`
+        `${import.meta.env.VITE_BASE_URL}/quizzes/${quizId}`
       );
       if (!response.status === 200) {
         throw new Error("Failed to delete quiz");
