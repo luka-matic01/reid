@@ -22,6 +22,7 @@ const Dashboard = () => {
       setQuizzes(data);
       setIsLoading(false);
     } catch (error) {
+      setIsLoading(false);
       console.error(error);
     }
   };
@@ -58,7 +59,7 @@ const Dashboard = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center">
-        <span className="loading loading-infinity loading-xs"></span>
+        <span className="loading loading-infinity loading-xs" />
         Loading...
       </div>
     );

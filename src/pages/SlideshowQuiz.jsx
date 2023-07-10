@@ -44,14 +44,14 @@ const SlideshowQuiz = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center">
-        <span className="loading loading-infinity loading-xs"></span>
+        <span className="loading loading-infinity loading-xs" />
         Loading...
       </div>
     );
   }
 
   // If there are no questions or quiz at all
-  if (quiz.questions.length === 0) {
+  if (!quiz.questions.length) {
     return <div className="text-center">Add some questions to this quiz</div>;
   }
 
@@ -104,8 +104,7 @@ const SlideshowQuiz = () => {
   // Toggle slideshow the way you want
   const cardClassName = `${
     theme === "dark" ? "bg-black text-white" : "bg-white text-black"
-  } 
-  }`;
+  } `;
 
   return (
     <div className={cardClassName}>

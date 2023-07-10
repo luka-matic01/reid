@@ -74,14 +74,13 @@ const CreateQuiz = () => {
       };
 
       // Send a POST request to create the quiz
-      const response = await axios.post(
+      const createdQuizData = await axios.post(
         `${import.meta.env.VITE_BASE_URL}/quizzes?_embed=questions`,
         quizData
       );
       // If the quiz is created successfully
-      if (response.status === 201) {
+      if (createdQuizData.status === 201) {
         setMessage("Quiz created successfully!");
-        setWarningMessage("");
         setSelectedQuestionIds([]); // Clear the selected question IDs
         reset();
         remove(0);

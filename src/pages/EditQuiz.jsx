@@ -76,7 +76,7 @@ const EditQuiz = () => {
 
     const selectedQuestions = await fetchSelectedQuestions(selectedQuestionIds);
     const createdQuestionsData = await getCreatedQuestionsData(
-      isCreatedQuestion || []
+      isCreatedQuestion
     );
     try {
       // Update the quiz
@@ -128,40 +128,39 @@ const EditQuiz = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center">
-        <span className="loading loading-infinity loading-xs"></span>Loading...
+        <span className="loading loading-infinity loading-xs" />
+        Loading...
       </div>
     );
   }
 
   return (
-    <div>
-      <div className="flex justify-center min-h-screen p-10 bg-[#e8f9fd]">
-        <div className="flex md:flex-row flex-col justify-center gap-10 w-full">
-          {quiz && (
-            <div className="w-full md:w-auto">
-              <QuizForm
-                register={register}
-                control={control}
-                errors={errors}
-                fields={fields}
-                append={append}
-                remove={remove}
-                handleSubmit={handleSubmit}
-                onSubmit={onSubmit}
-                message={message}
-                warningMessage={warningMessage}
-                quiz={quiz}
-                page="edit"
-              />
-            </div>
-          )}
+    <div className="flex justify-center min-h-screen p-10 bg-[#e8f9fd]">
+      <div className="flex md:flex-row flex-col justify-center gap-10 w-full">
+        {quiz && (
           <div className="w-full md:w-auto">
-            <QuestionList
-              allQuestions={allQuestions}
-              selectedQuestionIds={selectedQuestionIds}
-              toggleSelectedQuestions={toggleSelectedQuestions}
+            <QuizForm
+              register={register}
+              control={control}
+              errors={errors}
+              fields={fields}
+              append={append}
+              remove={remove}
+              handleSubmit={handleSubmit}
+              onSubmit={onSubmit}
+              message={message}
+              warningMessage={warningMessage}
+              quiz={quiz}
+              page="edit"
             />
           </div>
+        )}
+        <div className="w-full md:w-auto">
+          <QuestionList
+            allQuestions={allQuestions}
+            selectedQuestionIds={selectedQuestionIds}
+            toggleSelectedQuestions={toggleSelectedQuestions}
+          />
         </div>
       </div>
     </div>
