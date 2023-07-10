@@ -1,0 +1,122 @@
+{
+  "quizzes": [
+    {
+      "questions": [
+        {
+          "id": "8f4e5e39-649d-4b37-9cdb-1ec30ae93d71",
+          "question": "Kako nazivamo benigni tumor žljezdanog tkiva?",
+          "answer": "Adenom"
+        },
+        {
+          "id": "1e4e38b6-641b-4930-b64c-8163b1b9b281",
+          "question": "Kako glasi latinski naziv za željezo (Fe)?\n",
+          "answer": "Ferrum"
+        },
+        {
+          "id": "5458624a-3105-4021-855f-0434e16d541c",
+          "question": "Kako u fizici nazivamo pojavu međusobnog privlačenja površina dvaju tijela načinjenih od različitih tvari, ili tijela i tekućine, zbog djelovanja elektromagnetskih sila među molekulama?",
+          "answer": "Adhezija"
+        },
+        {
+          "id": "7b313235-ee24-4797-b0c3-3438f34e7df5",
+          "question": "Jedan je, do tad planet, najveći gubitnik zasjedanja Međunarodnog astronomskog saveza iz 2006. godine. Naime, tu je odlučeno, da ga se prebacuje u nižu ligu, među, takozvane, patuljaste planete. Koji je to planet, pardon, patuljasti planet?\n",
+          "answer": "PLUTON"
+        },
+        {
+          "id": "d8c90e01-9e05-42d9-b466-ea3a74ab4582",
+          "question": "U ovom pitanju tražimo ime talijanskog matematičara i fizičara, kojeg smatramo jednim od osnivača molekularne teorije. U njegovu čast, broj osnovnih čestica plina koji sadrži jedan mol, naziva se brojem s njegovim imenom.\n",
+          "answer": "AMADEO AVOGADRO"
+        },
+        {
+          "id": "db39590a-ab95-4f94-8b36-0feb8d1c753a",
+          "question": "Britanski fizičar i kemičar, Michael Faraday, zaslužan je za mnoga otkrića na područjima elektromagnetizma i elektrokemije. Zbog toga je, njemu u čast, jedna fizikalna jedinica dobila ime farad (F).\nŠto to mjeri farad?",
+          "answer": "KAPACITET"
+        },
+        {
+          "id": "1ed09d46-d7f5-4d2b-af2d-451c4d16c797",
+          "question": "U španjolskoj pokrajini Santander, nalazi se jedno od čuda Paleolitika. Riječ je o špilji koja je prekrivena slikama divljih životinja te negativima ljudskih ruku. Ovo mjesto je još od 1985., dio UNESCOve svjetske baštine.\nKako se zove ova špilja, koju u slobodnom prijevodu sa španjolskog možemo zvati pogled u vis? ",
+          "answer": "ALTAMIRA"
+        },
+        {
+          "id": "a5939464-3079-4d11-a16a-9869f12b4565",
+          "question": "Kod nas se temperatura mjeri u celzijusima. Međutim, u nekim djelovima svijeta prihvaćena je skala koju je osmislio njemački fizičar Gabriel Fahrenheit. Vjerujem da se mnogi snalaze i na ovoj ljestvici, ali kod nas je mnogo poznatija po književnom djelu Raya Bradburya, po kojem je snimljen i istoimeni film. U imenu romana prva je riječ Fahrenheit, a potom ide broj, koji, navodno, označava temperaturu na kojoj papir počinje gorjeti. U Fahrenheitima, logično.\nKoji je to broj?",
+          "answer": "FAHRENHEIT 451\n\n"
+        },
+        {
+          "id": "8f4e5e39-649d-4b37-9cdb-1ec30ae93d71",
+          "question": "Kako nazivamo benigni tumor žljezdanog tkiva?",
+          "answer": "Adenom"
+        },
+        {
+          "id": "1e4e38b6-641b-4930-b64c-8163b1b9b281",
+          "question": "Kako glasi latinski naziv za željezo (Fe)?\n",
+          "answer": "Ferrum"
+        },
+        {
+          "id": "a4bee5ce-d764-48bc-b7d0-dae62d138e78",
+          "question": "123",
+          "answer": "123"
+        }
+      ],
+      "name": "Nauka",
+      "id": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "8f4e5e39-649d-4b37-9cdb-1ec30ae93d71",
+      "question": "Kako nazivamo benigni tumor žljezdanog tkiva?",
+      "answer": "Adenom"
+    },
+    {
+      "id": "1e4e38b6-641b-4930-b64c-8163b1b9b281",
+      "question": "Kako glasi latinski naziv za željezo (Fe)?\n",
+      "answer": "Ferrum"
+    },
+    {
+      "id": "5458624a-3105-4021-855f-0434e16d541c",
+      "question": "Kako u fizici nazivamo pojavu međusobnog privlačenja površina dvaju tijela načinjenih od različitih tvari, ili tijela i tekućine, zbog djelovanja elektromagnetskih sila među molekulama?",
+      "answer": "Adhezija"
+    },
+    {
+      "id": "7b313235-ee24-4797-b0c3-3438f34e7df5",
+      "question": "Jedan je, do tad planet, najveći gubitnik zasjedanja Međunarodnog astronomskog saveza iz 2006. godine. Naime, tu je odlučeno, da ga se prebacuje u nižu ligu, među, takozvane, patuljaste planete. Koji je to planet, pardon, patuljasti planet?\n",
+      "answer": "PLUTON"
+    },
+    {
+      "id": "d8c90e01-9e05-42d9-b466-ea3a74ab4582",
+      "question": "U ovom pitanju tražimo ime talijanskog matematičara i fizičara, kojeg smatramo jednim od osnivača molekularne teorije. U njegovu čast, broj osnovnih čestica plina koji sadrži jedan mol, naziva se brojem s njegovim imenom.\n",
+      "answer": "AMADEO AVOGADRO"
+    },
+    {
+      "id": "db39590a-ab95-4f94-8b36-0feb8d1c753a",
+      "question": "Britanski fizičar i kemičar, Michael Faraday, zaslužan je za mnoga otkrića na područjima elektromagnetizma i elektrokemije. Zbog toga je, njemu u čast, jedna fizikalna jedinica dobila ime farad (F).\nŠto to mjeri farad?",
+      "answer": "KAPACITET"
+    },
+    {
+      "id": "1ed09d46-d7f5-4d2b-af2d-451c4d16c797",
+      "question": "U španjolskoj pokrajini Santander, nalazi se jedno od čuda Paleolitika. Riječ je o špilji koja je prekrivena slikama divljih životinja te negativima ljudskih ruku. Ovo mjesto je još od 1985., dio UNESCOve svjetske baštine.\nKako se zove ova špilja, koju u slobodnom prijevodu sa španjolskog možemo zvati pogled u vis? ",
+      "answer": "ALTAMIRA"
+    },
+    {
+      "id": "a5939464-3079-4d11-a16a-9869f12b4565",
+      "question": "Kod nas se temperatura mjeri u celzijusima. Međutim, u nekim djelovima svijeta prihvaćena je skala koju je osmislio njemački fizičar Gabriel Fahrenheit. Vjerujem da se mnogi snalaze i na ovoj ljestvici, ali kod nas je mnogo poznatija po književnom djelu Raya Bradburya, po kojem je snimljen i istoimeni film. U imenu romana prva je riječ Fahrenheit, a potom ide broj, koji, navodno, označava temperaturu na kojoj papir počinje gorjeti. U Fahrenheitima, logično.\nKoji je to broj?",
+      "answer": "FAHRENHEIT 451\n\n"
+    },
+    {
+      "id": "a4bee5ce-d764-48bc-b7d0-dae62d138e78",
+      "question": "123",
+      "answer": "123"
+    },
+    {
+      "id": "ec142a63-c392-4dd1-8d56-675a8d26eb10",
+      "question": "123",
+      "answer": "123"
+    },
+    {
+      "id": "b3ef9e8b-7d51-4bad-8317-296835d62c78",
+      "question": "123",
+      "answer": "123"
+    }
+  ]
+}
