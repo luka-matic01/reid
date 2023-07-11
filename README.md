@@ -35,6 +35,17 @@ To run this project, you'll need to follow these steps:
    ```
 
 5. In the second terminal tab, navigate to the project's root directory and run the JSON server:
+
    ```bash
    npx json-server --watch db.json
    ```
+
+6. Create a .env file in the project's root directory and set the VITE_API_URL variable to http://localhost:3000. This is required because the app is currently using json-server as a temporary API implementation.
+
+Example .env file:
+
+```bash
+VITE_API_URL=http://localhost:3000
+```
+
+### Enjoy!
