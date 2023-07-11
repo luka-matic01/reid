@@ -73,9 +73,9 @@ const CreateQuiz = () => {
         questions: allQuestions,
       };
 
-      // Send a POST request to create the quiz
+      // POST /quizzes
       const createdQuizData = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/quizzes?_embed=questions`,
+        `${import.meta.env.VITE_API_URL}/quizzes?_embed=questions`,
         quizData
       );
       // If the quiz is created successfully

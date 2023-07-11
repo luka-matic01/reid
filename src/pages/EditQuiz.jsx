@@ -89,8 +89,9 @@ const EditQuiz = () => {
         ...createdQuestions,
       ];
       const updatedData = { ...data, questions: updatedQuestions };
+      // PUT /quizzes/${id}
       const updateQuizResponse = await axios.put(
-        `${import.meta.env.VITE_BASE_URL}/quizzes/${id}`,
+        `${import.meta.env.VITE_API_URL}/quizzes/${id}`,
         updatedData,
         {
           headers: {

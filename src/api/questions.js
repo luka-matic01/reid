@@ -1,10 +1,10 @@
 import axios from "axios";
 
-// Fetches all the questions from the database
+// GET /questions
 export const fetchQuestions = async () => {
   try {
     const response = await axios.get(
-      `${import.meta.env.VITE_BASE_URL}/questions`
+      `${import.meta.env.VITE_API_URL}/questions`
     );
     const questions = response.data;
     return questions;
@@ -15,6 +15,7 @@ export const fetchQuestions = async () => {
 };
 
 // Fetches selected questions (RECYCLING) from the server based on the given question IDs.
+// GET /questions/${id}
 export const fetchSelectedQuestions = async (selectedQuestionsIds) => {
   // Iterate through each question ID
   const getQuestionsQueryParams = selectedQuestionsIds
@@ -23,7 +24,7 @@ export const fetchSelectedQuestions = async (selectedQuestionsIds) => {
 
   if (getQuestionsQueryParams) {
     const response = await axios.get(
-      `${import.meta.env.VITE_BASE_URL}/questions?${getQuestionsQueryParams}`
+      `${import.meta.env.VITE_API_URL}/questions?${getQuestionsQueryParams}`
     );
     const selectedQuestions = response.data;
     return selectedQuestions;
@@ -33,12 +34,13 @@ export const fetchSelectedQuestions = async (selectedQuestionsIds) => {
 };
 
 // Create the new questions that aren't from database
+// POST /questions
 export const createQuestions = async (questionsData) => {
   try {
     const createdQuestions = [];
     for (const questionData of questionsData) {
       const response = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/questions`,
+        `${import.meta.env.VITE_API_URL}/questions`,
         questionData
       );
       const createdQuestion = response.data;
@@ -53,12 +55,13 @@ export const createQuestions = async (questionsData) => {
   }
 };
 
+// PUT /questions/${id}
 export const editQuestions = async (quiz) => {
   const questions = quiz.questions;
   try {
     const updatePromises = questions.map((question) =>
       axios.put(
-        `${import.meta.env.VITE_BASE_URL}/questions/${question.id}`,
+        `${import.meta.env.VITE_API_URL}/questions/${question.id}`,
         question
       )
     );
